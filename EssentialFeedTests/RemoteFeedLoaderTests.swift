@@ -18,7 +18,7 @@ struct RemoteFeedLoaderTests {
         #expect((client.requestedURL == nil))
     }
 
-    @Test func test_load_requestDataFromURL() async throws {
+    @Test func test_load_requestsDataFromURL() async throws {
         let url = URL(string: "https://a-given-url.com")!
         let (sut, client) = makeSUT(url: url)
         
